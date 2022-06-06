@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Управление заказами</title>
+</head>
+<body>
+<h2>Управление заказами</h2>
+<br>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Информация о доставке</th>
+        <th>Время заказа</th>
+        <th>Цена заказа</th>
+        <th>Состав заказа</th>
+        <th>Статус заказа</th>
+        <th>Поменять статус</th>
+    </tr>
+    <tr>
+        <td>ID</td>
+        <td>
+            Информация
+        </td>
+        <td>
+            Время
+        </td>
+        <td>
+            Цена
+        </td>
+        <td>
+            <ul>
+                <li>
+                    Кола
+                </li>
+                <li>
+                    Бургер
+                </li>
+                <li>
+                    Фри
+                </li>
+            </ul>
+        </td>
+        <td>Статус</td>
+        <td>
+            <form action="http://localhost:7777/change-status" method="post">
+                <select id="status" name="status">
+                    <option value="new" selected>Готовится</option>
+                    <option value="sent">Отправлено курьером</option>
+                    <option value="delivered">Доставлено</option>
+                </select>
+                <input type="submit" class="button button1">
+            </form>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
